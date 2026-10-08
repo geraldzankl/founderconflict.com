@@ -40,3 +40,7 @@ Editorial premium, not generic SaaS: deep navy `#111b24`, warm off-white `#f4f1e
 ## Site health
 
 HTML sections and key links have been structurally checked for both language versions. Browser-level screenshot rendering remains a final pre-launch check.
+
+## Hero update
+
+The hero uses the user's original white-wall portrait under `assets/katrin-wall-portrait.webp`, with additional vertical spacing and a larger image on desktop. The biography retains the separate cutout portrait. Both DE and EN share the same responsive styling.
