@@ -548,3 +548,37 @@ header .brand i {font-style:normal;color:#8ba960;}
   }
   .hero-visual .photo-caption {transform:translateY(-168px);}
 }
+
+/* V10: align the desktop portrait with the hero eyebrow */
+/* The image's top is positioned at the same offset as the first line of
+   hero copy; the card overlaps its bottom edge. Mobile stacking is unchanged. */
+@media (min-width:1200px) {
+  .hero-visual { position:relative; align-self:stretch; padding-top:0; }
+  .hero-visual img {
+    position:absolute;
+    top:90px;
+    right:0;
+    transform:none;
+  }
+  .hero-visual .photo-caption {
+    position:absolute;
+    top:calc(90px + 421.12px - 94px);
+    bottom:auto;
+    transform:none;
+  }
+}
+@media (min-width:901px) and (max-width:1199px) {
+  .hero-visual { position:relative; align-self:stretch; padding-top:0; }
+  .hero-visual img {
+    position:absolute;
+    top:75px;
+    right:0;
+    transform:none;
+  }
+  .hero-visual .photo-caption {
+    position:absolute;
+    top:calc(75px + 384px - 90px);
+    bottom:auto;
+    transform:none;
+  }
+}
