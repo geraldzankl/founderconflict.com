@@ -24,7 +24,8 @@ Static HTML/CSS without a build process. Compatible with GitHub Pages, Netlify, 
 
 ## Before launch
 
-1. Replace the current *remote Wix portrait URL* with an authorized original image hosted under `assets/`, then update both language pages. No binary photo asset was uploaded in V2.
+1. Portrait now uses locally committed `assets/katrin-transparent.webp` (600×700 original raster with white backdrop removed and WebP optimization). Confirm presentation on mobile and desktop before launch.
+2.
 2. Verify Katrin's exact qualifications, biography wording, on-site geography, service formats and commercial terms.
 3. Replace the three marked **fictional testimonial placeholders** with verified and consented customer quotes **or remove the testimonial section** before a public campaign. Never portray example quotes as genuine endorsements.
 4. Verify the legal notice / privacy links in both page footers; current URLs are provisional.
