@@ -313,7 +313,7 @@ header .brand i {font-style:normal;color:#8ba960;}
   box-shadow:0 8px 27px rgba(0,0,0,.12);
 }
 .bio-image {display:flex;align-items:flex-end;justify-content:center;overflow:hidden;}
-.bio-image img {width:100%;height:100%;object-fit:contain;object-position:center bottom;}
+.bio-image img {width:100%;height:100%;object-fit:cover;object-position:center 26%;}
 @media (min-width:901px) and (max-width:1199px){
   .hero-inner {grid-template-columns:minmax(0,2.45fr) minmax(0,.75fr);}
   .hero-copy h1.hero-headline {font-size:clamp(40px,4.25vw,53px);letter-spacing:-.04em;}

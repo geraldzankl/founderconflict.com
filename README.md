@@ -24,7 +24,7 @@ Static HTML/CSS without a build process. Compatible with GitHub Pages, Netlify, 
 
 ## Before launch
 
-1. Portrait now uses locally committed `assets/katrin-transparent.webp` (600×700 original raster with white backdrop removed and WebP optimization). Confirm presentation on mobile and desktop before launch.
+1. Both the hero and the About Katrin section use the locally committed original portrait with white wall in `assets/katrin-wall-portrait.webp`; confirm final cropping on mobile and desktop.
 2.
 2. Verify Katrin's exact qualifications, biography wording, on-site geography, service formats and commercial terms.
 3. Replace the three marked **fictional testimonial placeholders** with verified and consented customer quotes **or remove the testimonial section** before a public campaign. Never portray example quotes as genuine endorsements.
@@ -43,4 +43,4 @@ HTML sections and key links have been structurally checked for both language ver
 
 ## Hero update
 
-The hero uses the user's original white-wall portrait under `assets/katrin-wall-portrait.webp`, with additional vertical spacing and a larger image on desktop. The biography retains the separate cutout portrait. Both DE and EN share the same responsive styling.
+The hero uses the user's original white-wall portrait under `assets/katrin-wall-portrait.webp`, with additional vertical spacing and a larger image on desktop. The biography also uses this original photo rather than the cutout. Both DE and EN share the same responsive styling.
