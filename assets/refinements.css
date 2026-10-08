@@ -499,3 +499,52 @@ header .brand i {font-style:normal;color:#8ba960;}
   .hero-visual {height:310px;}
   .hero-visual img {width:min(67.2%,197px);height:289px;}
 }
+
+/* V9: responsive word breaks and another 20% portrait refinement */
+/* Keep 'Great companies' and 'need strong founders.' on two lines on desktop.
+   On narrower screens treat them as a natural sentence so no fragments
+   collide into a single 'companiesneed' word or get clipped. */
+@media (max-width:900px) {
+  .hero-copy h1.hero-headline {
+    hyphens:none !important;
+    -webkit-hyphens:none !important;
+    word-break:normal;
+    overflow-wrap:normal;
+    max-width:100%;
+  }
+  .hero-copy h1.hero-headline .hero-line {
+    display:inline;
+    white-space:normal;
+  }
+}
+@media (max-width:600px) {
+  .hero-copy h1.hero-headline {
+    font-size:clamp(30px,7.6vw,43px);
+    line-height:1.13;
+    letter-spacing:-.04em;
+  }
+}
+@media (max-width:380px) {
+  .hero-copy h1.hero-headline {
+    font-size:clamp(28px,7.6vw,31px);
+    letter-spacing:-.035em;
+  }
+}
+/* Further reduce ONLY the hero portrait by 20% on desktop.
+   The attached nameplate follows the image; remaining content is untouched. */
+@media (min-width:1200px) {
+  .hero-visual img {
+    width:min(23.68vw,300.8px);
+    height:421.12px;
+    transform:translateY(-207px);
+  }
+  .hero-visual .photo-caption {transform:translateY(-207px);}
+}
+@media (min-width:901px) and (max-width:1199px) {
+  .hero-visual img {
+    width:min(26.24vw,262.4px);
+    height:384px;
+    transform:translateY(-168px);
+  }
+  .hero-visual .photo-caption {transform:translateY(-168px);}
+}
