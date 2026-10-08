@@ -444,3 +444,25 @@ header .brand i {font-style:normal;color:#8ba960;}
   .hero-visual{height:375px;}
   .hero-visual img{height:361px;width:min(84%,246px);}
 }
+
+/* V7: Lift Katrin hero portrait to reduce empty space above it */
+/* Move the portrait and its nameplate as a unit; preserve the two-line heading. */
+@media (min-width:1200px) {
+  .hero-visual img,
+  .hero-visual .photo-caption { transform:translateY(-95px); }
+}
+@media (min-width:901px) and (max-width:1199px) {
+  .hero-visual img,
+  .hero-visual .photo-caption { transform:translateY(-70px); }
+}
+/* On stacked layouts, close part of the gap before the image without
+   pulling the content up on small phones where the CTA needs space. */
+@media (min-width:701px) and (max-width:900px) {
+  .hero-visual { margin-top:-90px; }
+}
+@media (min-width:601px) and (max-width:700px) {
+  .hero-visual { margin-top:-46px; }
+}
+@media (max-width:600px) {
+  .hero-visual { margin-top:-15px; }
+}
