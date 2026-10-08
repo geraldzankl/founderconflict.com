@@ -1,20 +1,41 @@
-# FounderConflict — Website V1
+# FounderConflict — bilingual website V2
 
-Premium-Landingpage für Katrin Zankl: Konfliktberatung und Mediation für Co-Founder von Seed bis Series C, zunächst für Deutschland und Österreich.
+FounderConflict is a premium, editorial website for Katrin Zankl, focused on founder mediation and co-founder conflict resolution for **bootstrapped and pre-seed through Series C** companies in Austria and Germany.
 
-## Starten
-Die Website ist eine statische HTML-Seite ohne Build-Prozess. `index.html` im Browser öffnen oder per GitHub Pages, Cloudflare Pages, Netlify oder Vercel hosten.
+## Pages
 
-## Anpassungen vor öffentlichem Launch
-- Originalporträt lokal in `assets/` speichern und die aktuell extern eingebundene Wix-Bildadresse ersetzen.
-- Verifiziertes Impressum und Datenschutzseite hinterlegen. Die jetzigen Footer-Links sind zu prüfen.
-- Terminbuchungs-Link eintragen; aktuell öffnen CTAs eine E-Mail an `info@konflikt-beratung.at`.
-- Katrins Qualifikationen, konkrete Angebotsbedingungen und Honorar bestätigen; V1 zeigt eine 60-minütige Erstsession für €200.
-- Domain und DNS/Hosting konfigurieren. Ein GitHub-Commit veröffentlicht die Seite noch nicht auf founderconflict.com.
-- Für Google Ads Datenschutz, Conversion Tracking und ggf. Cookie-Einwilligung rechtssicher einrichten.
+- `/index.html` — German homepage (default)
+- `/en/index.html` — English homepage
+- `/assets/refinements.css` — visual enhancements and responsive styles
 
-## Design
-Editorial statt SaaS: Deep Navy, Off-White, Salbeigrün, viel Weißraum, große Typografie und persönliches Portrait.
+Static HTML/CSS without a build process. Compatible with GitHub Pages, Netlify, Cloudflare Pages, Vercel or any static web host. Language links navigate between `/` and `/en/`.
 
-## Technisches
-Mobiloptimiertes HTML/CSS; ohne Framework, ohne externe JS-Bibliotheken. Schriftdateien werden über Google Fonts geladen.
+## V2 changes
+
+- Full English localization; language picker in top navigation and language links in footer.
+- Explicit button foreground colors ensure dark text on pale-green buttons and white text on dark buttons.
+- Larger, full-width problem-section heading; reduced text density.
+- SVG icons, decorative brand cues and three connected, numbered mediation steps.
+- Three **clearly labeled fictional example quotes** (2 male founder voices, 1 female founder voice). These are not testimonials from clients and must never be displayed as verified real reviews.
+- No public price for the initial conversation. Fees and format agreed individually before booking.
+- Bootstrapped / pre-seed → Series C range.
+- Online and in-person service, subject to arrangement, in Austria and Germany.
+- Katrin’s biography includes her perspective as a founder’s wife and her work with female founders.
+
+## Before launch
+
+1. Replace the current *remote Wix portrait URL* with an authorized original image hosted under `assets/`, then update both language pages. No binary photo asset was uploaded in V2.
+2. Verify Katrin's exact qualifications, biography wording, on-site geography, service formats and commercial terms.
+3. Replace the three marked **fictional testimonial placeholders** with verified and consented customer quotes **or remove the testimonial section** before a public campaign. Never portray example quotes as genuine endorsements.
+4. Verify the legal notice / privacy links in both page footers; current URLs are provisional.
+5. Replace the working `mailto:info@konflikt-beratung.at` CTAs with a real booking link if available.
+6. Connect `founderconflict.com` to suitable hosting and configure deployment; pushing to GitHub alone does not publish to the domain.
+7. Before Google Ads, review compliance, analytics/consent, accessibility, performance and final mobile rendering.
+
+## Visual direction
+
+Editorial premium, not generic SaaS: deep navy `#111b24`, warm off-white `#f4f1eb`, lime/sage accents `#d5eea5`, oversized sans-serif / italic-serif headlines, accessible CTAs, understated symbols, portrait photography, and a mobile-friendly left-to-right process timeline.
+
+## Site health
+
+HTML sections and key links have been structurally checked for both language versions. Browser-level screenshot rendering remains a final pre-launch check.
