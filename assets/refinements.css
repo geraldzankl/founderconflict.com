@@ -582,3 +582,34 @@ header .brand i {font-style:normal;color:#8ba960;}
     transform:none;
   }
 }
+
+/* V11: founder-specific German hero — deliberate desktop lines, safe mobile wrapping. */
+@media (min-width:1200px) {
+  .hero-copy h1.hero-headline--de {
+    font-size:clamp(42px,3.55vw,60px);
+    letter-spacing:-.045em;
+  }
+}
+@media (min-width:901px) and (max-width:1199px) {
+  .hero-copy h1.hero-headline--de {
+    font-size:clamp(33px,3.45vw,44px);
+    letter-spacing:-.045em;
+  }
+}
+@media (max-width:900px) {
+  .hero-copy h1.hero-headline--de {
+    font-size:clamp(32px,6.3vw,53px);
+    letter-spacing:-.042em;
+    overflow-wrap:break-word;
+  }
+  .hero-copy h1.hero-headline--de .hero-line {
+    display:block;
+    white-space:normal;
+  }
+}
+@media (max-width:420px) {
+  .hero-copy h1.hero-headline--de {
+    font-size:clamp(29px,7.6vw,34px);
+    line-height:1.1;
+  }
+}
