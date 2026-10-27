@@ -256,7 +256,7 @@ header .brand i {font-style:normal;color:#8ba960;}
   .hero-copy {padding:44px 0 26px;}
   .hero-visual {padding-top:13px;max-height:405px;}
   .hero-visual img {width:min(83%,320px);height:378px;max-height:378px;}
-  .photo-caption {bottom:10px;left:0;padding:13px 16px;min-width:0;max-width:90%;}
+  .photo-caption {padding:13px 16px;bottom:10px;left:0;min-width:0;max-width:90%;}
   .dark-section .services-heading {gap:11px;}
   .dark-section .services-heading h2{font-size:clamp(35px,8vw,47px);white-space:normal;letter-spacing:-1.9px;}
 }
@@ -611,5 +611,15 @@ header .brand i {font-style:normal;color:#8ba960;}
   .hero-copy h1.hero-headline--de {
     font-size:clamp(29px,7.6vw,34px);
     line-height:1.1;
+  }
+}
+
+/* V12: Restore mobile gutters on sections that are also their own wrapper.
+   The section padding shorthand reset the horizontal .wrap padding to zero.
+   Match the existing mobile .wrap gutter; do not alter desktop or nesting. */
+@media (max-width:900px) {
+  .section.wrap {
+    padding-left:5%;
+    padding-right:5%;
   }
 }
