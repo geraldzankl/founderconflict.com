@@ -22,10 +22,13 @@ jobs:
     steps:
       - name: Checkout website
         uses: actions/checkout@v4
-      - name: Configure Pages
+      # One-time setup by a repository admin:
+      # Settings > Pages > Build and deployment > Source > GitHub Actions.
+      # GITHUB_TOKEN can deploy an existing Pages site, but cannot enable it.
+      - name: Configure existing Pages site
         uses: actions/configure-pages@v5
         with:
-          enablement: true
+          enablement: false
       - name: Upload website files
         uses: actions/upload-pages-artifact@v3
         with:
